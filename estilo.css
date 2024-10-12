@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root {
+    --color-1: rgb(255, 235, 235); /* Fondo de la página */
+    --color-2: rgb(0, 0, 0); /* Color de texto principal */
+    --color-3: rgb(251, 235, 235); /* Fondo de la cabecera */
+    --color-4: rgb(128, 128, 128); /* Color del borde en la cabecera */
+    --color-5: rgb(76, 17, 17); /* Fondo de #productos */
+    --color-6: rgb(255, 255, 255); /* Color del texto en #productos */
+    --color-7: rgb(253, 208, 208); /* Color de fondo al pasar el cursor en #menu2 */
+    --color-8: rgb(118, 44, 93);/* Fondo de #productos */
+}
+body{
+    font-family: 'Roboto', sans-serif;
+
+    color: var(--color-2);
+    background-color: var(--color-1) 
+}
+
+#logo img {
+    width: 400px;  
+    height: auto;  
+}
+#logo {
+    align-self: flex-start; 
+}
+#cabecera {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    background-color: var(--color-1); 
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin: 6px;
+    font-weight: 500;
+
+}
+
+#menu, #menu2 {
+    display: flex; 
+}
+
+#menu ul, #menu2 ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+#menu li, #menu2 li {
+    margin-right: 50px; 
+    float:left ;
+}
+
+#menu li:last-child, #menu2 li:last-child {
+    margin-right: 0; 
+}
+#menu li a, #menu2 li a{
+    color: var(--color-2);
+    text-decoration: none;
+    
+}
+#menu li a{
+    margin-right: 100px;
+    font-size: 20px;
+}
+#menu2 li a {
+    background-color: var(--color-2); 
+    color: white; 
+    text-decoration: none; 
+    font-size: 20px; 
+    padding: 9px;
+    border-radius: 20px; 
+}
+#menu2 li:first-child a {
+    background-color: var(--color-6); /* "Iniciar Sesión" */
+    color: var(--color-2); 
+    border: 2px solid var(--color-2); 
+}
+
+#menu2 li:last-child a {
+    background-color: var(--color-2); /* "Registrarse" */
+    color: var(--color-6); 
+}
+#menu2 li a:hover {
+    background-color: rgb(253, 208, 208); 
+    color: var(--color-2); 
+}
+#seccion1 {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: var(--color-5);
+}
+
+#imagen1, #texto1 {
+    flex: 1; 
+}
+
+#imagen1 img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+    width: 100%;
+}
+
+#texto1 {
+    padding: 0px; 
+    background-color: var(--color-5); 
+    border-radius: 5px;
+    text-align: center;
+    color: #e6e0e0;
+    
+}
+
+#seccion2 {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: var(--color-8);
+    margin-top: 20px;
+}
+
+#imagen3, #texto2 {
+    flex: 1; 
+}
+
+#imagen3 img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+    width: 100%;
+}
+
+#texto2 {
+    padding: 0px; 
+    background-color: var(--color-8); 
+    border-radius: 5px;
+    text-align: center;
+    color: #e6e0e0;
+}
+#contenedor{
+    margin:6px;
+}
+#texto1 h2, #texto2 h2 {
+    font-size: 17px; 
+    color: #ffffff; 
+}
+#texto1 h1, #texto2 h1{
+    font-size: 35px;
+}
+#texto1 a, #texto2 a {
+    background-color: var(--color-2); 
+    color: var(--color-3); 
+    padding: 29px; 
+    border-radius: 45px; 
+    text-decoration: none; 
+    font-size: 15;
+}
+
+#texto1 a:hover, #texto2 a:hover {
+    background-color: var(--color-6); 
+    color: black; 
+    text-decoration: none;
+}
+#texto1 a:hover, #texto2 a:hover {
+    background-color: var(--color-7); 
+    color: var(--color-2); 
+    text-decoration: none;
+}
+#menu3 {
+    display: flex; 
+    justify-content: center; 
+    align-items:flex-start; 
+    padding: 20px; 
+    background-color: var(--color-1); 
+    border-top: 1px solid gray; 
+    margin: 6px; 
+}
+
+#menu3 ul {
+    display: flex; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+#menu3 li {
+    margin-right: 150px; 
+}
+
+#menu3 li:last-child {
+    margin-right: 0;
+}
+
+#menu3 li a {
+    text-decoration: none; 
+    color: black; 
+    font-size: 18px; 
+}
+#pie {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+    background-color:var(--color-1); 
+    border-top: 1px solid gray; 
+    
+}
+#libro img{
+    width: 300px;;
+}
+#redes li a {
+    text-decoration: none; 
+    color: var(--color-2); 
+    font-size: 39px; 
+    
+}
+#redes{
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#redes li {
+    margin-right: 15px; 
+}
+#butrich { 
+    margin-top: 10px; 
+    text-align: left; 
+}
+

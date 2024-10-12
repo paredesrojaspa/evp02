@@ -1,0 +1,240 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root {
+    --color-1: rgb(255, 235, 235); /* Fondo de la página */
+    --color-2: rgb(0, 0, 0); /* Color de texto principal */
+    --color-3: rgb(251, 235, 235); /* Fondo de la cabecera */
+    --color-4: rgb(128, 128, 128); /* Color del borde en la cabecera */
+    --color-5: rgb(76, 17, 17); /* Fondo de #productos */
+    --color-6: rgb(255, 255, 255); /* Color del texto en #productos */
+    --color-7: rgb(253, 208, 208); /* Color de fondo al pasar el cursor en #menu2 */
+    --color-8: rgb(118, 44, 93);/* Fondo de #productos */
+}
+body{
+    font-family: 'Roboto', sans-serif;
+
+    color: var(--color-2);
+    background-color: var(--color-1); 
+}
+
+#logo img {
+    width: 400px;  
+    height: auto;  
+}
+#cabecera {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    background-color: var(--color-3);
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin: 6px;
+    font-weight: 500;
+
+}
+
+#menu, #menu2 {
+    display: flex;
+}
+
+#menu ul, #menu2 ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+#menu li, #menu2 li {
+    margin-right: 50px; 
+    float:left ;
+}
+
+#menu li:last-child, #menu2 li:last-child {
+    margin-right: 0; 
+}
+#menu li a, #menu2 li a{
+    color: var(--color-2);
+    text-decoration: none;
+    
+}
+#menu li a{
+    margin-right: 100px;
+    font-size: 20px;
+}
+#menu2 li a {
+    background-color: black; 
+    color: var(--color-3); 
+    text-decoration: none; 
+    font-size: 20px; 
+    padding: 9px; 
+    border-radius: 20px; 
+}
+#menu2 li:first-child a {
+    background-color: var(--color-3); /*  "Iniciar Sesión" */
+    color: var(--color-2); 
+    border: 2px solid var(--color-2); 
+}
+
+#menu2 li:last-child a {
+    background-color: var(--color-2); /* "Registrarse" */
+    color: white; 
+}
+#menu2 li a:hover {
+    background-color: var(--color-7); 
+    color: black; 
+}
+#menu li a.active {
+    color: var(--color-5); 
+    text-decoration: underline;
+}
+#productos{
+    padding: 20px;
+    border: var(--color-5);
+    background-color: var(--color-5);
+    margin: 6px;
+    color: var(--color-3);
+}
+#listado {
+    display: flex;
+    justify-content: center; 
+    align-items: stretch; 
+    gap: 40px; 
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+#listaproductos, #imgproductos {
+    border: 1px solid #ccc; 
+    padding: 20px;
+    box-sizing: border-box; 
+    background-color: #fff; 
+    width: 45%;
+}
+
+#listaproductos {
+    width: 70%; 
+}
+
+#imgproductos {
+    width: 90%; 
+}
+
+
+#listaproductos ul {
+    list-style: none;
+    padding: 0;
+}
+
+#listaproductos ul li {
+    margin-bottom: 28px;
+    font-weight: thin; 
+}
+
+#listaproductos ul ul li {
+    font-weight: normal; 
+    margin-left: 15px; 
+}
+
+/* Contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* hacer dos columnas */
+    gap: 30px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+
+}
+
+
+.grid-item img {
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+   
+}
+
+/* Estilos para los textos */
+.grid-item p {
+    font-size: 1em; 
+    margin: 0;
+    flex: 1;
+    text-align: left; 
+}
+.titulo{
+    font-size: 24px; 
+    font-weight: bold;
+}
+#menu3 {
+    display: flex; 
+    justify-content: center; 
+    align-items:flex-start; 
+    padding: 20px; 
+    background-color: var(--color-1); 
+    border-top: 1px solid gray; 
+    margin: 6px; 
+}
+
+#menu3 ul {
+    display: flex; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+#menu3 li {
+    margin-right: 150px; 
+}
+
+#menu3 li:last-child {
+    margin-right: 0; 
+}
+
+#menu3 li a {
+    text-decoration: none; 
+    color: black; 
+    font-size: 18px; 
+}
+#pie {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+    background-color:var(--color-1); 
+    border-top: 1px solid gray; 
+    
+}
+#libro img{
+    width: 300px;;
+}
+#redes li a {
+    text-decoration: none; 
+    color: var(--color-2); 
+    font-size: 39px; 
+    
+}
+#redes{
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#redes li {
+    margin-right: 15px; 
+}
+#butrich { 
+    margin-top: 10px; 
+    text-align: left; 
+}
